@@ -1,0 +1,37 @@
+{
+  "asset": "AKI_formal_head_master",
+  "purpose": "pixel-accurate head replacement reference for IRIAM full-body standing assets",
+  "source_dimensions": {
+    "width": 1610,
+    "height": 1907,
+    "mode": "RGB"
+  },
+  "source_sha256": "a33cb97c3792db73cdeaca22cb43e679266a181d39cb46f0f461f8e97db46cfd",
+  "regions": {
+    "head_bbox": [25, 0, 1524, 1500],
+    "face_bbox": [414, 487, 818, 924],
+    "hair_bbox": [25, 0, 1524, 1180]
+  },
+  "eye_centers": [
+    [622.121287539406, 952.3915712626514],
+    [1034.8756721525176, 906.7733420237902]
+  ],
+  "replacement_assets": [
+    "AKI_head_master_replacement_RGBA_v1.png",
+    "AKI_head_master_replacement_pack_v1.npz",
+    "AKI_head_master_replacement_manifest_v1.json",
+    "AKI_head_master_analysis_overlay_v1.png"
+  ],
+  "formal_master_assets": [
+    "AKI_formal_head_master_pixel_reference.png",
+    "AKI_formal_head_master_pixels.npz",
+    "AKI_formal_head_master_metadata.json"
+  ],
+  "notes": [
+    "Use geometry/placement and mask compositing, not AI regeneration.",
+    "The original full-body master is always the body source for a new replacement attempt.",
+    "Never iterate from a previously edited candidate.",
+    "Tune only head scale, X/Y placement and the narrow neck/collar connection region.",
+    "Preserve source pixels unless a specifically approved local strand adjustment is requested."
+  ]
+}
