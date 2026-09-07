@@ -84,6 +84,30 @@
     "pixel_changes_in_final_local_pass": 594,
     "changed_bbox_xyxy_exclusive": [908, 404, 949, 490]
   },
+  "automation_checkpoint": {
+    "run_local_time": "2026-09-07T23:27:44+09:00",
+    "formal_head_master": {
+      "name": "IMG_7368(9).jpeg",
+      "library_file_id": "libfile_51186e9879b88191b2da37af20af41b6",
+      "source_dimensions": [944, 1117]
+    },
+    "formal_body_master": {
+      "name": "1A7663BE-39DC-4071-B78D-91D312B45307(20260906-172454).jpeg",
+      "library_file_id": "libfile_cf520bee9df4819191f1bb1e6ea6fd6a",
+      "source_dimensions": [1024, 1536]
+    },
+    "last_completed_step": "Four independent 1980x2970 PNG composites were exported and file-integrity checked.",
+    "qa_status": "all_failed",
+    "failure_reason": "At 400 percent review, the silver-hair alpha mask contains broken pale nape and earring edges. Attempts to preserve the body master reveal duplicate old-head pixels; selective cleanup creates white cutout regions. No candidate is eligible for delivery or promotion.",
+    "uncompleted_steps": [
+      "Create a precise hand-traced alpha mask for both napes and earrings from the formal head master.",
+      "Remove only old-head protrusions without touching the neck, collar, mug, hand, or chest.",
+      "Repeat 100, 400, and 800 percent QA on four fresh exports from the two formal masters."
+    ],
+    "next_start_point": "Restart the image-composite step from the two formal masters. Do not use v1-v9 intermediates as sources. Build and validate the hand-traced nape/earring alpha mask before producing the next four candidates.",
+    "intermediate_outputs_are_sources": false,
+    "master_promoted": false
+  },
   "references": [
     "generation-rules/production-handbook.md",
     "generation-rules/qa-checklist.md",
