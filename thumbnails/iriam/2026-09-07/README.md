@@ -15,6 +15,11 @@ AKI本人が正式採用。
   - 1024 × 1024 px / PNG / sRGB
   - 制作原本からLanczos方式で縮小
   - SHA-256: `a80ad6ba87d97242159f0d789002a9a60bc04b99b81ab9b96e5f87d3457acb0a`
+- `AKI_IRIAM_thumbnail_adopted_upload_513.png`
+  - IRIAM用513px版
+  - 513 × 513 px / PNG / sRGB
+  - 制作原本からLanczos方式で縮小し、実寸表示向けに微細なシャープネス調整
+  - SHA-256: `8967efda9a391ccc89265a8addf53775fdd779dad3739442c8a7f2ff8a4de904`
 
 ## 採用した構図
 
@@ -35,4 +40,3 @@ AKI本人が正式採用。
 ## 位置づけ
 
 この画像はIRIAM用の正式採用サムネイルです。IRIAM立ち絵の正式マスター画像ではありません。
-
