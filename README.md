@@ -27,6 +27,7 @@ IRIAM立ち絵専用の長期管理リポジトリです。
 - `generation-rules/` 制作基準書・QA・固定条件・NG条件
 - `archive/` 旧解像度・旧座標・過去の検証記録
 - `candidates/` 必要に応じて保存する未昇格候補
+- `thumbnails/` AKI本人が採用したIRIAM用サムネイルと制作記録
 
 ## 現役資料と履歴資料
 
