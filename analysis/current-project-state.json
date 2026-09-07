@@ -1,0 +1,94 @@
+{
+  "project": "AKI IRIAM Avatar",
+  "repository": "hiroaki424242-glitch/aki-iriam-avatar",
+  "default_branch": "main",
+  "updated_at": "2026-09-07",
+  "authoritative_principle": "Do not regenerate or imitate the face and hair. Reuse the formal head-master pixels and composite them onto the formal full-body master.",
+  "final_output": {
+    "width": 1980,
+    "height": 2970,
+    "aspect_ratio": "2:3",
+    "format": "PNG",
+    "background": "white",
+    "top_margin_target_px": 12
+  },
+  "workflow_modes": {
+    "new_candidate_run": {
+      "sources": [
+        "formal head master",
+        "formal full-body master"
+      ],
+      "reuse_previous_candidate": false,
+      "default_output_count": 4,
+      "independent_files": true,
+      "collage_forbidden": true
+    },
+    "single_success_pattern": {
+      "output_count": 1,
+      "purpose": "Establish a correct face/head/neck/collar connection before returning to 1x4."
+    },
+    "explicit_local_retouch": {
+      "allowed_only_when_aki_selects_a_specific_candidate": true,
+      "base_candidate_is_immutable": true,
+      "allowed_changes": "Only the explicitly named pixel regions.",
+      "require_zero_diff_outside_mask": true
+    }
+  },
+  "priority_order": [
+    "face",
+    "hair and both napes",
+    "head-neck-body connection",
+    "pose and seven-head proportion",
+    "clothing and props",
+    "resolution and file integrity"
+  ],
+  "hair": {
+    "silhouette": "inverted egg",
+    "flow": "gravity-following, downward and inward",
+    "lion_mane_forbidden": true,
+    "viewer_left": "Preserve the longer nape through its naturally tapered endpoint.",
+    "viewer_right": "Preserve the inward curl and master-defined shorter nape.",
+    "extra_outward_spikes_forbidden": true
+  },
+  "critical_artifacts_forbidden": [
+    "gray band under jaw",
+    "brown vertical neck line",
+    "double neck line",
+    "abruptly cut nape tip",
+    "misaligned neck and torso",
+    "raised or malformed collar",
+    "white rectangle",
+    "horizontal seam",
+    "cutout boundary",
+    "missing mug, handle, fingers, collar, bear, decoration or feet"
+  ],
+  "qa": {
+    "zoom_levels_percent": [100, 400, 800],
+    "pixel_level_review": true,
+    "verify_png_after_save": true,
+    "load_all_pixels_after_save": true,
+    "record_sha256": true,
+    "record_changed_pixel_count_for_local_retouch": true,
+    "record_changed_bbox_for_local_retouch": true
+  },
+  "promotion": {
+    "ai_may_recommend_best_candidate": true,
+    "ai_may_promote_to_master": false,
+    "requires_explicit_aki_approval": true
+  },
+  "current_candidate": {
+    "name": "AKI_roomwear_master2_precision_retouch_v37_1980x2970.png",
+    "status": "candidate_not_master",
+    "library_file_id": "libfile_1f5c7a12e53c81918c9a8fb317e90c55",
+    "sha256": "ef03f008a17d59c538986565ec4fb59b85d4d39128af0011410a86419214516b",
+    "pixel_changes_in_final_local_pass": 594,
+    "changed_bbox_xyxy_exclusive": [908, 404, 949, 490]
+  },
+  "references": [
+    "generation-rules/production-handbook.md",
+    "generation-rules/qa-checklist.md",
+    "master-spec/head-master.md",
+    "head-replacement/pixel-replacement-workflow.md",
+    "analysis/roomwear-precision-retouch-2026-09-07.md"
+  ]
+}
